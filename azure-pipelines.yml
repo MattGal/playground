@@ -5,4 +5,4 @@ jobs:
   pool:
     name: dotnet-external-temp
   steps:
-  - script: "@echo off & for /f %a in ('dir /s /b C:\vsagent\_diags\') do echo ##vso[task.uploadfile]%~fa"
+  - script: "@echo off & for /f %%a in ('dir /s /b C:\vsagent\_diags\') do echo ##vso[task.uploadfile]%%~fa"
