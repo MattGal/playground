@@ -3,6 +3,6 @@ jobs:
 - job: getdiaglogs
   displayName: Get Diagnostic Logs
   pool:
-    name: dotnet-external-temp
+    name: dotnet-external-temp-vs2017
   steps:
-  - script: "@echo off & for /f %%a in ('dir /s /b F:\vsagent\_diag') do echo ##vso[task.uploadfile]%%~fa"
+  - script: "query session"
