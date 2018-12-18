@@ -1,8 +1,8 @@
    
 jobs:
-- job: getdiaglogs
-  displayName: Get Diagnostic Logs
+- job: freebsdtest
+  displayName: Test FreeBSD Job
   pool:
-    name: dotnet-external-temp-vs2017
+    name: dnceng-freebsd-internal
   steps:
-  - script: "query session"
+  - script: "freebsd-version -u"
