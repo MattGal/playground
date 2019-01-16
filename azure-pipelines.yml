@@ -1,8 +1,8 @@
    
 jobs:
-- job: freebsdtest
-  displayName: Test FreeBSD Job
+- job: helloworldtesting
+  displayName: Test A Yaml Thingy
   pool:
-    name: dnceng-freebsd-internal
+    name: dotnet-internal-temp-staging
   steps:
-  - script: "freebsd-version -u"
+  - script: "ping -n 120 www.bing.com"
